@@ -15,12 +15,17 @@
   },
   "validations": [],
   "relations": {
-    "Profile":{
-      "type":"hasOne",
-      "model":"Profile",
-      "foreignKey":""
+    "Profile": {
+      "type": "hasOne",
+      "model": "Profile",
+      "foreignKey": ""
+    },
+    "accessTokens": {
+      "type": "hasMany",
+      "model": "CustomAccessToken",
+      "foreignKey": "userId"
     }
-  },
-  "acls": [],
+  },   
+  "acls":[],
   "methods": {}
 }

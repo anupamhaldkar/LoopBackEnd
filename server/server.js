@@ -47,7 +47,7 @@ app.models.user.find((err,result) => {
   }
 
 });
-]
+
 app.models.user.afterRemote('create',  (ctx, user, next) => {
  console.log("New user is",user);
  app.models.Profile.create({

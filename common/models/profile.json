@@ -29,10 +29,10 @@
   },
   "validations": [],
   "relations": {
-    "Profile":{
-      "type":"hasOne",
-      "model":"Profile",
-      "foreignKey":""
+    "user":{
+      "type":"belongsTo",
+      "model":"user",
+      "foreignKey":"userId"
     }
   },
   "acls": [],

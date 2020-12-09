@@ -15,10 +15,10 @@
   },
   "validations": [],
   "relations": {
-    "user":{
-      "type":"belongsTo",
-      "model":"user",
-      "foreignKey":"userId"
+    "Profile":{
+      "type":"hasOne",
+      "model":"Profile",
+      "foreignKey":""
     }
   },
   "acls": [],

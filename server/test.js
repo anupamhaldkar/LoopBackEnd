@@ -1,5 +1,5 @@
 var models = require('./server.js').models;
-
+/*
 var toSave =   [
     {name:'Anupam', email:'a12@h.com'},
     {name:'Anupam1', email:'a13@h.com'},
@@ -21,3 +21,5 @@ toSave.map( obj => {
         console.log("Created?",created);
     })
 })
+
+*/

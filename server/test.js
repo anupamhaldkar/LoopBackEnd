@@ -25,8 +25,8 @@ toSave.map( obj => {
 */
 
 var filter ={
-    where:{},
-    order:'date ASC',
+    where:{},           //Kind of SQL where Clause
+    order:'date ASC',   //order by: "field direction"
     limit:3
 }
 

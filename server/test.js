@@ -23,3 +23,14 @@ toSave.map( obj => {
 })
 
 */
+
+var filter ={
+    where:{},
+    order:'date ASC',
+    limit:3
+}
+
+
+models.Profile.findOne({where:{name:'Anupam'}},(err,found)=>{
+    console.log("Found?",err,found);
+})

@@ -32,6 +32,6 @@ var filter ={
 
 //profile.Posts.Image
 
-models.Profile.findOne({where:{name:'Anupam'},order:'id DESC'},(err,found)=>{
+models.Profile.find({where:{name:'Anupam'},order:'id DESC'},(err,found)=>{
     console.log("Found?",err,found);
 })

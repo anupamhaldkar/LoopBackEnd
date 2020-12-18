@@ -30,6 +30,7 @@ var filter ={
     limit:3
 }
 
+//profile.Posts.Image
 
 models.Profile.findOne({where:{name:'Anupam'}},(err,found)=>{
     console.log("Found?",err,found);

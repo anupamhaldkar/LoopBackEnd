@@ -26,7 +26,7 @@ toSave.map( obj => {
 
 var filter ={
     where:{
-        name:'Anupam'
+        name:{like:'Anupam'}
     },           //Kind of SQL where Clause
     order:'id ASC',   //order by: "field direction"
     limit:3

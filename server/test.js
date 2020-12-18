@@ -25,13 +25,15 @@ toSave.map( obj => {
 */
 
 var filter ={
-    where:{},           //Kind of SQL where Clause
-    order:'date ASC',   //order by: "field direction"
+    where:{
+        name:'Anupam'
+    },           //Kind of SQL where Clause
+    order:'id ASC',   //order by: "field direction"
     limit:3
 }
 
 //profile.Posts.Image
 
-models.Profile.find({where:{name:'Anupam'},order:'id DESC'},(err,found)=>{
+models.Profile.find(filter,(err,found)=>{
     console.log("Found?",err,found);
 })

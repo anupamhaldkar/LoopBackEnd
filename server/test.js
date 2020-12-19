@@ -26,10 +26,10 @@ toSave.map( obj => {
 
 var filter ={
     where:{
-        name:{like:'Anupam'}
+        email:{like:'a'}
     },           //Kind of SQL where Clause
     order:'id ASC',   //order by: "field direction"
-    limit:3
+    limit:10
 }
 
 //profile.Posts.Image

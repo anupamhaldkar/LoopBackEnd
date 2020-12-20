@@ -27,6 +27,7 @@ toSave.map( obj => {
 var filter ={
     where:{
         email:{like:'a'}
+        //postCount:{gt:10}
     },           //Kind of SQL where Clause
     order:'id ASC',   //order by: "field direction"
     limit:10

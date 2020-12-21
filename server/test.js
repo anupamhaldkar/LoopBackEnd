@@ -30,7 +30,11 @@ var filter ={
         //postCount:{gt:10}
     },           //Kind of SQL where Clause
     order:'id ASC',   //order by: "field direction"
-    limit:10
+    limit:10,
+    skip:0,
+    fields:{
+        email:true
+    }
 }
 
 //profile.Posts.Image

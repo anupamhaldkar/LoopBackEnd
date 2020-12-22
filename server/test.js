@@ -39,6 +39,6 @@ var filter ={
 
 //profile.Posts.Image
 
-models.Profile.find(filter,(err,found)=>{
+models.Profile.findById("601a7dbab6ba31360442f78d",(err,found)=>{
     console.log("Found?",err,found);
 })

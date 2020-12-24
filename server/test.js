@@ -22,7 +22,7 @@ toSave.map( obj => {
     })
 })
 
-
+*/
 
 var filter ={
     where:{
@@ -36,10 +36,9 @@ var filter ={
         email:true
     }
 }
-*/
+
 //profile.Posts.Image
 
-models.Profile.findById("601a7dbab6ba31360442f78d",(err,found)=>{
+models.Profile.destroyAll(filter.where,(err,found)=>{
     console.log("Found?",err,found);
-    found.destroy();
 })

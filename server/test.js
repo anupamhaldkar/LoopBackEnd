@@ -39,6 +39,6 @@ var filter ={
 
 //profile.Posts.Image
 
-models.Profile.destroyAll(filter.where,(err,found)=>{
+models.Profile.destroyById("601ad8c77a276d729c9cc055",(err,found)=>{
     console.log("Found?",err,found);
 })

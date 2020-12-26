@@ -39,6 +39,7 @@ var filter ={
 
 //profile.Posts.Image
 
-models.Profile.destroyById("601ad8c77a276d729c9cc055",(err,found)=>{
+models.Profile.findById("601ad8c77a276d729c9cc055",{include:'Posts'},(err,found)=>{
     console.log("Found?",err,found);
+    found.Posts.destroyAll({date: {lte:new Date('2020-12-26')}})
 })

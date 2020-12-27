@@ -9,14 +9,14 @@
   "validations": [],
   "relations": {
     "user": {
-      "type":"belongsTo",
-      "model":"user",
-      "foreignKey":"userId"
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
     },
-    "accessTokens":{
-    "type":"belongsTo",
-      "model":"user",
-      "foreignKey":"userId"
+    "accessTokens": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
     }
   },
   "acls": [],

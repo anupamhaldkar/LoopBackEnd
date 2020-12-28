@@ -10,6 +10,9 @@
   },
   "myFile": {
     "name": "myFile",
-    "connector": "loopback-component-storage"
+    "connector": "loopback-component-storage",
+    "provider":"filesystem",
+    "root":"/storage",
+    "nameConflict":"makeUnique"
   }
 }

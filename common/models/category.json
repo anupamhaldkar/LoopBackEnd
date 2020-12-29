@@ -17,7 +17,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "Post":{
+      "type":"hasMany",
+      "model":"Post"
+    }
+  },
   "acls": [],
   "methods": {}
 }

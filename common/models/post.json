@@ -30,7 +30,13 @@
       "type": "belongsTo",
       "model": "Profile",
       "foreignKey": "profileId"
+    },
+    "Category":{
+      "type":"belongsTo",
+      "model":"Category",
+      "foreignKey":"categoryId"
     }
+
   },
   "acls": [
     {

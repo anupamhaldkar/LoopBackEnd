@@ -25,10 +25,10 @@
       "model": "CustomAccessToken",
       "foreignKey": "userId"
     },
-    "Post":{
-      "type":"hasMany",
-      "model":"Post",
-      "foreignKey":""
+    "Post": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
     }
   },
   "acls": [],

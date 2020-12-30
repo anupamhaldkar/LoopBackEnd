@@ -31,12 +31,11 @@
       "model": "Profile",
       "foreignKey": "profileId"
     },
-    "Category":{
-      "type":"belongsTo",
-      "model":"Category",
-      "foreignKey":"categoryId"
+    "Category": {
+      "type": "belongsTo",
+      "model": "Category",
+      "foreignKey": "categoryId"
     }
-
   },
   "acls": [
     {

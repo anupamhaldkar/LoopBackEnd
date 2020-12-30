@@ -18,9 +18,9 @@
   },
   "validations": [],
   "relations": {
-    "Post":{
-      "type":"hasMany",
-      "model":"Post"
+    "Post": {
+      "type": "hasMany",
+      "model": "Post"
     }
   },
   "acls": [

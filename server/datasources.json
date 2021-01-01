@@ -11,8 +11,8 @@
   "myFile": {
     "name": "myFile",
     "connector": "loopback-component-storage",
-    "provider":"filesystem",
-    "root":"./server/storage",
-    "nameConflict":"makeUnique"
+    "provider": "filesystem",
+    "root": "./server/storage",
+    "nameConflict": "makeUnique"
   }
 }

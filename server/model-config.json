@@ -48,8 +48,8 @@
     "dataSource": "db",
     "public": true
   },
-  "ImageFile": {
-    "dataSource": "myFile",
+  "PostImage": {
+    "dataSource": "db",
     "public": true
   }
 }

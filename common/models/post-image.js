@@ -1,6 +1,7 @@
 'use strict';
 const sharp = require('sharp');
 const fs = require('fs');
+const CONTAINER_URL = '/api/containers/';
 module.exports = function(Postimage) {
     PostImage.upload = function(ctx, options, access_token, post_id, cb){
         if(!options) options = {};

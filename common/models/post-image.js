@@ -1,8 +1,16 @@
 'use strict';
 const sharp = require('sharp');
+const fs = require('fs');
 module.exports = function(Postimage) {
-
-    Postimage.remoteMethod(
+    PostImage.upload = function(ctx, options, access_token, post_id, cb){
+        if(!options) options = {};
+        ctx.req.params.container = 'postImages';
+        if(!cs.existsSync('./server/storage/'+ ctx.req.params.container)){
+            fs.mkdirSync('./server/storage/'+ ctx.req.params.container);
+        }
+        
+    }
+    PostImage.remoteMethod(
         'upload',
         {
             description: 'uploads a file',

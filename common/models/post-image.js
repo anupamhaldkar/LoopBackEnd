@@ -9,7 +9,7 @@ module.exports = function(Postimage) {
         if(!cs.existsSync('./server/storage/'+ ctx.req.params.container)){
             fs.mkdirSync('./server/storage/'+ ctx.req.params.container);
         }
-        
+        PostImage.app.models.ImageFile.upload();
     }
     PostImage.remoteMethod(
         'upload',

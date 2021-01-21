@@ -34,7 +34,6 @@ boot(app, __dirname, function(err) {
 });
 
 console.log(Object.keys(app.models));
-
 app.models.user.find((err,result) => {
   if(result.length === 0){
     const user = {
@@ -48,7 +47,7 @@ app.models.user.find((err,result) => {
   }
 
 });
-
+]
 app.models.user.afterRemote('create',  (ctx, user, next) => {
  console.log("New user is",user);
  app.models.Profile.create({
